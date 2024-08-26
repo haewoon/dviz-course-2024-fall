@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Haewoon Kwak" /><link rel="canonical" href="https://github.com/haewoon/dviz-course-2024-fall/m03-integrity/class/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Visualization integrity - Data Visualization 2024 Fall</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Visualization integrity";
+        var mkdocs_page_input_path = "m03-integrity/class.md";
+        var mkdocs_page_url = "/haewoon/dviz-course-2024-fall/m03-integrity/class/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../images/dv.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Course overview</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../communication/">Communication</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1: Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m01-intro/class/">Why?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m01-intro/lab01/">Module 1: Python environment setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m01-intro/lab01supp-python_review/">Module 1: Optional Python review</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2: History</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m02-history/class/">History of visualization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m02-history/lab02/">Module 2: John Snow's map</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3: Integrity</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Visualization integrity</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#before-the-class">Before the class</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#learning-outcomes">Learning outcomes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#if-you-want-to-know-more">If you want to know more</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#seeing-is-believing">Seeing is believing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bad-visualizations">Bad visualizations</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#correlation-causation">Correlation != causation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#there-are-three-kinds-of-lies-lies-damned-lies-and-statistics">There are three kinds of lies: lies, damned lies, and statistics.</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lab03/">Module 3: Fix it or break it!</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4: Perception</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m04-perception/class/">Perception</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m04-perception/lab04/">Module 4: Perception</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5: Design</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m05-design/class/">Perception</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m05-design/lab05/">Module 5: Design</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6: Data</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m06-data/class/">Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m06-data/lab06/">Module 6 assignment: Data types and tidy data</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7: Univariate</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m07-1D/class/">Univariate data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m07-1D/lab07/">Module 7: 1D data</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8: Histogram</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m08-histogram/class/">Histogram</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m08-histogram/lab08/">Module 8: Histogram and CDF</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9: Estimation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m09-estimation/class/">Estimation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m09-estimation/lab09/">Module 9: Estimation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10: Logarithm</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m10-logscale/class/">Log scale</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m10-logscale/lab10/">Module 10: Logscale</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11: High-dimensional data</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m11-highdim/class/">High-dimensional data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m11-highdim/lab11/">Module 11: Visualizing high dimensional data</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12: Maps</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m12-maps/class/">Maps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m12-maps/lab12/">Module 12: Maps</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13: Text</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m13-text/class/">Visualizing texts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m13-text/lab13/">Module 13: Texts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14: Networks</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m14-networks/class/">Networks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m14-networks/lab14/">Module 14: Networks</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Data Visualization 2024 Fall</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">3: Integrity</li>
+      <li class="breadcrumb-item active">Visualization integrity</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="visualization-integrity">Visualization integrity</h1>
+<h2 id="before-the-class">Before the class</h2>
+<ul>
+<li>Read E. R. Tufte, Visual Display of Quantitative Information, Ch. 1 and 2 (see Canvas). </li>
+</ul>
+<h2 id="learning-outcomes">Learning outcomes</h2>
+<ul>
+<li>You will be able to explain the history of visualization in a broad sense and in doing so will be able to appreciate the leap from concrete to abstract thinking in visualization</li>
+<li>You will be able to explain why it is very easy to fool with (or be fooled by) data visualizations and the common ways that visualizations deceive. </li>
+<li>You will be able to explain basic reasons why correlation does not mean causation. </li>
+<li>You will be able to explain the impact of the choice of scales. </li>
+<li>You will be able to explain the motivation behind Tufte's "lie factor"</li>
+<li>You will be able to list several ways to create good visualizations (or not to create bad visualizations). </li>
+</ul>
+<h2 id="if-you-want-to-know-more">If you want to know more</h2>
+<h3 id="seeing-is-believing">Seeing is believing</h3>
+<p>As our brain tries to integrate information from multiple sources and as our
+vision is a dominent sensory input, vision can interfere and dominate other
+sensory inputs. For instance, what you see can distort what you hear and it's
+called the <a href="https://en.wikipedia.org/wiki/McGurk_effect">McGurk Effect</a>.</p>
+<p><a href="http://www.youtube.com/watch?feature=player_embedded&v=G-lN8vWm3m0" target="_blank"><img src="http://img.youtube.com/vi/G-lN8vWm3m0/0.jpg" alt="Rubber hand illusion" width="240" height="180" border="10" /></a></p>
+<p>Probably more striking example is so-called <a href="https://www.youtube.com/watch?v=sxwn1w7MJvk">rubber hand
+illusion</a>. </p>
+<p><a href="http://www.youtube.com/watch?feature=player_embedded&v=sxwn1w7MJvk
+" target="_blank"><img src="http://img.youtube.com/vi/sxwn1w7MJvk/0.jpg" 
+alt="Rubber hand illusion" width="240" height="180" border="10" /></a></p>
+<p>Apparently, it is very easy to create an illusion that a crude rubber hand is yours. </p>
+<h3 id="bad-visualizations">Bad visualizations</h3>
+<p>There have been a lot of bad data visualizations from News media. They seem to decrease as data visualization is highlighted more and more. But still you will be able to find some glaring errors in data visualizations in news. For instance, </p>
+<ul>
+<li><a href="http://viz.wtf/">WTF Visualizations</a> </li>
+<li><a href="http://qz.com/580859/the-most-misleading-charts-of-2015-fixed/">The most misleading charts of 2015, fixed</a></li>
+<li><a href="http://flowingdata.com/category/visualization/ugly-visualization/">Flowing data: Ugly visualization</a></li>
+<li><a href="http://flowingdata.com/2011/12/12/fox-news-still-makes-awesome-charts/">Unemployment rate under president Obama</a></li>
+<li><a href="https://twitter.com/NickatFP/status/765035980759797760/photo/1">Zika virus</a></li>
+</ul>
+<h3 id="correlation-causation">Correlation != causation</h3>
+<p><img alt="xkcd: correlation" src="https://imgs.xkcd.com/comics/correlation.png" />
+<em><a href="https://xkcd.com/552/">xkcd: Correlation</a></em></p>
+<p>As this comic beautifully captured, the correlation does not guarantee causation, but the fact is usually not very intuitive to many people. First of all, if you have a lot of numbers, it is very easy to conjure spurious correlations. </p>
+<p><img alt="xkcd: significant" src="https://imgs.xkcd.com/comics/significant.png" />
+<em><a href="https://xkcd.com/882/">xkcd: Significant</a></em></p>
+<p>On the following website, you can find really weird and hillarious correlations that do not make any sense. </p>
+<ul>
+<li><a href="http://www.tylervigen.com/spurious-correlations">Spurious correlations</a> </li>
+<li><a href="http://www.bloomberg.com/bw/magazine/correlation-or-causation-12012011-gfx.html">Correlation or Causation?</a></li>
+</ul>
+<p>And then, it is often not easy to realize the existence of potential <strong><a href="https://en.wikipedia.org/wiki/Confounding">confounding variables (factors)</a></strong>. For instance, if there is a <a href="http://www.economist.com/blogs/graphicdetail/2015/08/daily-chart-2">negative correlation between maternal mortality and births by C-sections</a>, it is very easy to fall into a trap to think, "Oh, this indicates that C-section saves lives!" However, if number of C-sections in a country is strongly affected by the wealth of the country, and if the maternal mortality is also strongly affected by the wealth of the country, the negative correlation can be clearly visible <strong>even if</strong> C-section increases maternal mortality slightly! </p>
+<p>With the power of visual images, it is easy to mislead people by showing strong correlation and arguing the existence of causality. </p>
+<h3 id="there-are-three-kinds-of-lies-lies-damned-lies-and-statistics">There are three kinds of lies: lies, damned lies, and statistics.</h3>
+<p>Although I believe that statistics is one of the best tools that we have to make informed decisions, it is still true that you can be fooled by hidden details. The following book explains how one can be fooled by statistics and statistical graphics. This book is concise, witty, and extremely useful!  </p>
+<ul>
+<li><a href="http://www.amazon.com/How-Lie-Statistics-Darrell-Huff/dp/0393310728">How to Lie with Statistics</a></li>
+</ul>
+<p><img alt="" src="https://user-images.githubusercontent.com/20843596/133619037-e827b3d6-4914-4e12-b30e-9030d03d1b88.jpg" /></p>
+<p>The book talks about how you can manipulate perception by showing certain range of values for the vertical axis (mainly by not starting at zero). But it should not be followed religiously. The following video by Vox, titled <a href="https://youtu.be/14VYnFhBKcY">Shut up about the y-axis. It shouldn’t always start at zero</a>, explains this point nicely.</p>
+<p><a href="http://www.youtube.com/watch?feature=player_embedded&v=14VYnFhBKcY
+" target="_blank"><img src="http://img.youtube.com/vi/14VYnFhBKcY/0.jpg" 
+alt="Shut up about the y-axis. It shouldn’t always start at zero." width="240" height="180" border="10" /></a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../m02-history/lab02/" class="btn btn-neutral float-left" title="Module 2: John Snow's map"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../lab03/" class="btn btn-neutral float-right" title="Module 3: Fix it or break it!">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/haewoon/dviz-course-2024-fall" class="fa fa-code-fork" style="color: #fcfcfc"> haewoon/dviz-course-2024-fall</a>
+        </span>
+    
+    
+      <span><a href="../../m02-history/lab02/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../lab03/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/mathjax.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

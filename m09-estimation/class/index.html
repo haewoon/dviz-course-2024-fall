@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Haewoon Kwak" /><link rel="canonical" href="https://github.com/haewoon/dviz-course-2024-fall/m09-estimation/class/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Estimation - Data Visualization 2024 Fall</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Estimation";
+        var mkdocs_page_input_path = "m09-estimation/class.md";
+        var mkdocs_page_url = "/haewoon/dviz-course-2024-fall/m09-estimation/class/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../images/dv.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Course overview</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../communication/">Communication</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1: Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m01-intro/class/">Why?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m01-intro/lab01/">Module 1: Python environment setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m01-intro/lab01supp-python_review/">Module 1: Optional Python review</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2: History</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m02-history/class/">History of visualization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m02-history/lab02/">Module 2: John Snow's map</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3: Integrity</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m03-integrity/class/">Visualization integrity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m03-integrity/lab03/">Module 3: Fix it or break it!</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4: Perception</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m04-perception/class/">Perception</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m04-perception/lab04/">Module 4: Perception</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5: Design</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m05-design/class/">Perception</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m05-design/lab05/">Module 5: Design</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6: Data</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m06-data/class/">Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m06-data/lab06/">Module 6 assignment: Data types and tidy data</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7: Univariate</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m07-1D/class/">Univariate data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m07-1D/lab07/">Module 7: 1D data</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8: Histogram</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m08-histogram/class/">Histogram</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m08-histogram/lab08/">Module 8: Histogram and CDF</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9: Estimation</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Estimation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#before-the-class">Before the class</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#if-you-want-to-know-more">If you want to know more</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lab09/">Module 9: Estimation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10: Logarithm</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m10-logscale/class/">Log scale</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m10-logscale/lab10/">Module 10: Logscale</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11: High-dimensional data</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m11-highdim/class/">High-dimensional data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m11-highdim/lab11/">Module 11: Visualizing high dimensional data</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12: Maps</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m12-maps/class/">Maps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m12-maps/lab12/">Module 12: Maps</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13: Text</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m13-text/class/">Visualizing texts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m13-text/lab13/">Module 13: Texts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14: Networks</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m14-networks/class/">Networks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m14-networks/lab14/">Module 14: Networks</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Data Visualization 2024 Fall</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">9: Estimation</li>
+      <li class="breadcrumb-item active">Estimation</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="estimation">Estimation</h1>
+<h2 id="before-the-class">Before the class</h2>
+<ul>
+<li><a href="https://www.khanacademy.org/math/algebra2/logarithms-tutorial/logarithmic-scale-patterns/v/logarithmic-scale">Khan academy: Logarithmic scale</a></li>
+<li><a href="https://www.khanacademy.org/math/algebra2/logarithms-tutorial/logarithmic-scale-patterns/v/vi-and-sal-talk-about-the-mysteries-of-benford-s-law">Vi and Sal talk about the mysteries of Benford's law</a></li>
+<li>https://en.wikipedia.org/wiki/Interpolation</li>
+</ul>
+<h2 id="if-you-want-to-know-more">If you want to know more</h2>
+<ul>
+<li><a href="http://www.mvstat.net/tduong/research/seminars/seminar-2001-05/">An introduction to kernel density estimation</a></li>
+<li>Aaron Clauset, Cosma Rohilla Shalizi, M. E. J. Newman, <a href="http://arxiv.org/abs/0706.1062">Power-law distributions in empirical data</a></li>
+<li><a href="http://tuvalu.santafe.edu/~aaronc/powerlaws/">Aaron Clauset: Power-law distributions</a></li>
+<li><a href="http://vita.had.co.nz/papers/boxplots.pdf">40 years of boxplots</a> by Hadley Wickham and Lisa Stryjewski</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../m08-histogram/lab08/" class="btn btn-neutral float-left" title="Module 8: Histogram and CDF"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../lab09/" class="btn btn-neutral float-right" title="Module 9: Estimation">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/haewoon/dviz-course-2024-fall" class="fa fa-code-fork" style="color: #fcfcfc"> haewoon/dviz-course-2024-fall</a>
+        </span>
+    
+    
+      <span><a href="../../m08-histogram/lab08/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../lab09/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/mathjax.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

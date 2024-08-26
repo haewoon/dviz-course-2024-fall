@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Haewoon Kwak" /><link rel="canonical" href="https://github.com/haewoon/dviz-course-2024-fall/m01-intro/class/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Why? - Data Visualization 2024 Fall</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Why?";
+        var mkdocs_page_input_path = "m01-intro/class.md";
+        var mkdocs_page_url = "/haewoon/dviz-course-2024-fall/m01-intro/class/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../images/dv.png" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Course overview</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../communication/">Communication</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">1: Introduction</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Why?</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#further-readings">Further readings</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#meta-learning">Meta-learning</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#john-snows-map">John Snow's map</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#power-of-visualization">Power of visualization</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lab01/">Module 1: Python environment setup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../lab01supp-python_review/">Module 1: Optional Python review</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">2: History</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m02-history/class/">History of visualization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m02-history/lab02/">Module 2: John Snow's map</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">3: Integrity</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m03-integrity/class/">Visualization integrity</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m03-integrity/lab03/">Module 3: Fix it or break it!</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">4: Perception</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m04-perception/class/">Perception</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m04-perception/lab04/">Module 4: Perception</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">5: Design</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m05-design/class/">Perception</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m05-design/lab05/">Module 5: Design</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">6: Data</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m06-data/class/">Data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m06-data/lab06/">Module 6 assignment: Data types and tidy data</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">7: Univariate</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m07-1D/class/">Univariate data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m07-1D/lab07/">Module 7: 1D data</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">8: Histogram</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m08-histogram/class/">Histogram</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m08-histogram/lab08/">Module 8: Histogram and CDF</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">9: Estimation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m09-estimation/class/">Estimation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m09-estimation/lab09/">Module 9: Estimation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">10: Logarithm</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m10-logscale/class/">Log scale</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m10-logscale/lab10/">Module 10: Logscale</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">11: High-dimensional data</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m11-highdim/class/">High-dimensional data</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m11-highdim/lab11/">Module 11: Visualizing high dimensional data</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">12: Maps</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m12-maps/class/">Maps</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m12-maps/lab12/">Module 12: Maps</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">13: Text</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m13-text/class/">Visualizing texts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m13-text/lab13/">Module 13: Texts</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">14: Networks</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m14-networks/class/">Networks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../m14-networks/lab14/">Module 14: Networks</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Data Visualization 2024 Fall</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">1: Introduction</li>
+      <li class="breadcrumb-item active">Why?</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="why">Why?</h1>
+<p>Whatever we learn, we need to know why we are learning it. So, why do we need to learn visualization? </p>
+<h2 id="further-readings">Further readings</h2>
+<h3 id="meta-learning">Meta-learning</h3>
+<p><strong>Why quizzes and exams (retrievals) are more critical than reading or lecture in learning?</strong></p>
+<ul>
+<li>Karpicke, Jeffrey D., and Henry L. Roediger. <a href="https://web.mit.edu/jbelcher/www/learner/retrieval.pdf">"The critical importance of retrieval for learning." science 319.5865 (2008): 966-968.</a> </li>
+</ul>
+<p><strong>On the importance of internal motives</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?feature=player_detailpage&amp;v=u6XAPnuFjJc">RSA Animate - Drive: The surprising truth about what motivates us</a></li>
+<li>Wrzesniewski, Amy, et al. "Multiple types of motives don't multiply the motivation of West Point cadets." <a href="http://www.pnas.org/content/111/30/10990.short">Proceedings of the National Academy of Sciences 111.30 (2014): 10990-10995.</a></li>
+</ul>
+<h3 id="john-snows-map">John Snow's map</h3>
+<p><strong>Industrial revolution</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=zhL5DCizj5c">Coal, Steam, and the Industrial Revolution: Crash Course World History #32</a></li>
+</ul>
+<p><strong>John Snow's Cholera map and Voronoi diagram</strong></p>
+<ul>
+<li><a href="http://www.victorianweb.org/history/work/19.html">Nightmen in London</a></li>
+<li><a href="http://www.amazon.com/The-Ghost-Map-Terrifying-Epidemic/dp/1594482691">The Ghost Map: The Story of London's Most Terrifying Epidemic--and How It Changed Science, Cities, and the Modern World</a> by Steven Johnson</li>
+<li>
+<p><a href="https://johnsnow.matrix.msu.edu/book_images12.php">The John Snow archive and research companion</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Voronoi_diagram">Wikipedia: Voronoi Diagram</a></p>
+</li>
+<li>https://yyiki.org/wiki/Voronoi%20diagram/</li>
+</ul>
+<h3 id="power-of-visualization">Power of visualization</h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet">Anscombe's quartet</a></li>
+<li><a href="https://www.youtube.com/watch?v=DbJyPELmhJc">Same Stats, Different Graphs - CHI 2017</a></li>
+<li><a href="https://figshare.com/articles/What_data_patterns_can_lie_behind_a_correlation_coefficient_blog_post_/6945335/1">What data patterns can lie behind a correlation coefficient?</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pre-attentive_processing">Pre-attentive processing</a></li>
+</ul>
+<p><strong>Visualizations</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=AdSZJzb-aX8#!">PBS: The Art of Data Visualization</a></li>
+<li><a href="http://demographics.coopercenter.org/DotMap/index.html">Racial dotmap</a></li>
+<li><a href="http://www.ccs.neu.edu/home/amislove/twittermood/">Pulse of the Nation</a></li>
+<li><a href="http://www.nytimes.com/interactive/2014/09/19/nyregion/stop-and-frisk-is-all-but-gone-from-new-york.html?_r=0">‘Stop-and-Frisk’ Is All but Gone From New York</a></li>
+</ul>
+<p><strong>Exploratory vs. Explantory visualization</strong></p>
+<ul>
+<li>See <a href="https://github.com/yy/dviz-course/wiki/Exploratory-vs.-explanatory-visualization">Exploratory vs. explanatory visualization</a></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../communication/" class="btn btn-neutral float-left" title="Communication"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../lab01/" class="btn btn-neutral float-right" title="Module 1: Python environment setup">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/haewoon/dviz-course-2024-fall" class="fa fa-code-fork" style="color: #fcfcfc"> haewoon/dviz-course-2024-fall</a>
+        </span>
+    
+    
+      <span><a href="../../communication/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../lab01/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/mathjax.js"></script>
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
