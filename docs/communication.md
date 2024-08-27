@@ -2,12 +2,7 @@
 
 ## Channels
 
-We will have Canvas as the primary and official channel, but also have Slack as a more casual/quick communication channel. 
-
-You need to use IU email or Canvas for any communication that contains your personal information or specific grade. 
-However, I may be able to see Slack messages more quickly (I'm often behind my emails). 
-
-So I'd encourage to use Slack as the default, but then Canvas/Email for anything personal or sensitive. Even when you communicate via Canvas, you can still _ping_ me on Slack to ensure that I see it quickly. 
+Canvas is the primary and official communication channel. You can also contact the teaching team via email.
 
 ## How to get your answers quickly and effectively
 

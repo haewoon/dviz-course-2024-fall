@@ -1,6 +1,9 @@
 # solutions
 solutions/*
 
+# mkdocs 
+site/
+
 # Mac
 .DS_Store
 

@@ -43,22 +43,26 @@ directly handle and analyze complex datasets.
 
 ## Basic Information
 
-- **Homepage**: [https://yyahn.com/dviz-course/](https://yy.github.io/dviz-course/)
-- **GitHub**: [https://github.com/yy/dviz-course](https://github.com/yy/dviz-course)
-- **Instructor**: [Yong-Yeol (YY) Ahn](http://yongyeol.com) (Office Hours: Check Canvas) 
-- **Announcements**: All announcements will be sent via Canvas and Slack. 
-- **Prerequisites**: This course is open to advanced undergraduate students (I422) as well as graduate students (I590). Because programming (in Python and Javascript) is an integral part of the course, it is required to have good understanding and working knowledge of programming. The basic programming courses (Both I210/I211 or equivalent) are required prerequisites. In addition, *I308: Information Representation* and a basic statistics course is a recommended prerequisite. Basic understanding of design process and web (HTML, CSS, Javascript) is also highly recommended.
-- **Syllabus**: You can download the syllabus [here](http://yongyeol.com/teaching/dviz_syllabus.pdf), but you should check this homepage for up-to-date information. 
+- **Homepage**: [https://haewoon.github.io/dviz-course-2024-fall/](https://haewoon.github.io/dviz-course-2024-fall/)
+- **GitHub**: [https://github.com/haewoon/dviz-course-2024-fall](https://github.com/haewoon/dviz-course-2024-fall)
+- **Instructor**: [Haewoon Kwak](http://soda-labo.github.io) (Office Hours: Wednesday 9:30-10:30) 
+- **TAs**: 
+    - Andrea Chung (Office hours: Mon 10-11am & Fri 9-10am)
+    - Radhika Agarwal (Office hours: Wed 3-4pm & Fri 3-4pm)
+    - Jeet Patel (Mon 6-7pm & Thu 10-11am)
+- **Announcements**: All announcements will be sent via Canvas. 
+- **Prerequisites**: This course is open to graduate students (I590). Because programming (Mainly in Python) is an integral part of the course, it is required to have good understanding and working knowledge of programming. The basic programming courses (Both I210/I211 or equivalent) are required prerequisites. In addition, *I308: Information Representation* and a basic statistics course is a recommended prerequisite. Basic understanding of design process and web (HTML, CSS, Javascript) is also highly recommended.
+- **Syllabus**: You can download the syllabus via Canvas. 
 
 ## Links 
 
-- [Course Wiki](https://github.com/yy/dviz-course/wiki)
-- [Projects](https://github.com/yy/dviz-course/wiki/Projects)
-- [Resources](https://github.com/yy/dviz-course/wiki/Resources)
+- [Course Wiki](https://github.com/haewoon/dviz-course-2024-fall/wiki)
+- [Projects](https://github.com/haewoon/dviz-course-2024-fall/Projects)
+- [Resources](https://github.com/haewoon/dviz-course-2024-fall/Resources)
 
 
 ## Special Thanks
 
-- [Francisco Alfaro](https://github.com/fralfaro) helped the migration with [mkdocs](https://www.mkdocs.org). 
+- [Prof. YY Ahn](https://yongyeol.com) designed this course and kindly provided all the materials for the foundation.  
 
 
