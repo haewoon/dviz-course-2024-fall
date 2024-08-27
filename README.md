@@ -1,8 +1,9 @@
-# DSCI 590 - Data Visualization
+# INFO-I590 - Data Visualization
 
 ![example workflow](https://github.com/yy/dviz-course/actions/workflows/main.yml/badge.svg)
 <a href="https://yy.github.io/dviz-course/"><img alt="Link a la Documentación" src="https://img.shields.io/badge/docs-link-brightgreen"></a>
 
+INFO-I590: 2024 Fall 
 
 ## Basic Information
 
@@ -13,7 +14,3 @@
 - **Syllabus**: You can download the syllabus on Canvas. 
 
 ----
-
-- [Course Wiki](https://github.com/haewoon/dviz-course-2024-fall/wiki)
-- [Projects](https://github.com/haewoon/dviz-course-2024-fall/wiki/Projects)
-- [Resources](https://github.com/haewoon/dviz-course-2024-fall/wiki/Resources)
