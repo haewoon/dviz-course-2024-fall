@@ -4,6 +4,11 @@ layout: default
 
 # Course overview
 
+**INFO-I590** TOPICS IN INFORMATICS (Data visualization) <br/>
+Fall 2024<br/>
+TuTh 4:45PM - 6:00PM<br/>
+RADIO-TV (TV) 226
+
 ## Course description 
 
 Data visualization plays a pivotal role in understanding information, from news
@@ -53,13 +58,6 @@ directly handle and analyze complex datasets.
 - **Announcements**: All announcements will be sent via Canvas. 
 - **Prerequisites**: This course is open to graduate students (I590). Because programming (Mainly in Python) is an integral part of the course, it is required to have good understanding and working knowledge of programming. The basic programming courses (Both I210/I211 or equivalent) are required prerequisites. In addition, *I308: Information Representation* and a basic statistics course is a recommended prerequisite. Basic understanding of design process and web (HTML, CSS, Javascript) is also highly recommended.
 - **Syllabus**: You can download the syllabus via Canvas. 
-
-## Links 
-
-- [Course Wiki](https://github.com/haewoon/dviz-course-2024-fall/wiki)
-- [Projects](https://github.com/haewoon/dviz-course-2024-fall/Projects)
-- [Resources](https://github.com/haewoon/dviz-course-2024-fall/Resources)
-
 
 ## Special Thanks
 
