@@ -5,7 +5,7 @@ layout: default
 
 ## Proposal slides
 
-You will present your project proposal in **8 minutes** and submit the slides including the below information: 
+You will present your project proposal in **7 minutes** and submit the slides including the below information: 
 
 - Project title
 - Team members
@@ -23,7 +23,7 @@ You will present your project proposal in **8 minutes** and submit the slides in
 
 ## Final presentation slides
 
-Record a 12-minute video (please respect the time!) and upload it to YouTube (you can either publish it or make it *unlisted*). The last page of your slide should display the URL of your YouTube video. Submit your slides on Canvas. Pack your presentation with compelling visualizations, but also make it interesting and fun!! Check the rubric on Canvas.
+Record a **12-minute** video (please respect the time!) and upload it to YouTube (you can either publish it or make it *unlisted*). The last page of your slide should display the URL of your YouTube video. Submit your slides on Canvas. Pack your presentation with compelling visualizations, but also make it interesting and fun!! Check the rubric on Canvas.
 
 
 ## Final report
