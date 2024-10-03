@@ -829,9 +829,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#q-so-please-go-ahead-and-tidy-it-up-id-suggest-to-use-the-variable-name-income-and-value-name-frequency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q: so please go ahead and tidy it up! I'd suggest to use the variable name "income" and value name "frequency"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-types" class="md-nav__link">
     <span class="md-ellipsis">
       Data types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-ok-now-convert-both-religion-and-income-columns-of-as-categorical-dtype-in-place-and-show-that-now-uses-much-less-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q: ok, now convert both religion and income columns of as categorical dtype (in place) and show that now uses much less memory
     </span>
   </a>
   
@@ -1675,9 +1693,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#q-so-please-go-ahead-and-tidy-it-up-id-suggest-to-use-the-variable-name-income-and-value-name-frequency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q: so please go ahead and tidy it up! I'd suggest to use the variable name "income" and value name "frequency"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#data-types" class="md-nav__link">
     <span class="md-ellipsis">
       Data types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#q-ok-now-convert-both-religion-and-income-columns-of-as-categorical-dtype-in-place-and-show-that-now-uses-much-less-memory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q: ok, now convert both religion and income columns of as categorical dtype (in place) and show that now uses much less memory
     </span>
   </a>
   
@@ -2150,13 +2186,13 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <table align="left" class="m01-notebook-buttons">
 <td>
-<a href="https://colab.research.google.com/github/haewoon/dviz-course/blob/master/docs/m01-intro/lab01.ipynb" target="_blank"><img alt="No description has been provided for this image" src="https://www.tensorflow.org/images/colab_logo_32px.png"/>Run in Google Colab</a>
+<a href="https://colab.research.google.com/github/haewoon/dviz-course/blob/master/docs/m06-data/lab06.ipynb" target="_blank"><img alt="No description has been provided for this image" src="https://www.tensorflow.org/images/colab_logo_32px.png"/>Run in Google Colab</a>
 </td>
 <td>
-<a href="https://haewoon.github.io/dviz-course-2024-fall/m01-intro/lab01/"><img alt="No description has been provided for this image" src="https://www.tensorflow.org/images/GitHub-Mark-32px.png"/>View on Github</a>
+<a href="https://haewoon.github.io/dviz-course-2024-fall/m06-data/lab06/"><img alt="No description has been provided for this image" src="https://www.tensorflow.org/images/GitHub-Mark-32px.png"/>View on Github</a>
 </td>
 <td>
-<a href="https://raw.githubusercontent.com/haewoon/dviz-course/master/docs/m01-intro/lab01.ipynb"><img alt="No description has been provided for this image" src="https://www.tensorflow.org/images/GitHub-Mark-32px.png"/>View raw on Github</a>
+<a href="https://raw.githubusercontent.com/haewoon/dviz-course/master/docs/m06-data/lab06.ipynb"><img alt="No description has been provided for this image" src="https://www.tensorflow.org/images/GitHub-Mark-32px.png"/>View raw on Github</a>
 </td>
 </table>
 </div>
@@ -2548,7 +2584,17 @@ pew_df</div>
 <p>This dataset is about the relationships between income and religion, assembled from a research by the Pew Research Center. Is this dataset tidy or not? Why?</p>
 <p>Yes, many of the columns are values, not variable names. How should we fix it?</p>
 <p>Pandas provides a convenient function called <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.melt.html">melt</a>. You specify the <code>id_vars</code> that are variable columns, and <code>value_vars</code> that are value columns, and provide the name for the variable as well as the name for the values.</p>
-<p><strong>Q: so please go ahead and tidy it up! I'd suggest to use the variable name "income" and value name "frequency"</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="q-so-please-go-ahead-and-tidy-it-up-id-suggest-to-use-the-variable-name-income-and-value-name-frequency"><strong>Q: so please go ahead and tidy it up! I'd suggest to use the variable name "income" and value name "frequency"</strong><a class="anchor-link" href="#q-so-please-go-ahead-and-tidy-it-up-id-suggest-to-use-the-variable-name-income-and-value-name-frequency">¶</a></h2>
 </div>
 </div>
 </div>
@@ -3295,7 +3341,17 @@ income_type</div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>This data type now allows you to compare and sort based on the ordering.</p>
-<p><strong>Q: ok, now convert both religion and income columns of <code>pew_tidy_df</code> as categorical dtype (in place) and show that <code>pew_tidy_df</code> now uses much less memory</strong></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="q-ok-now-convert-both-religion-and-income-columns-of-pew_tidy_df-as-categorical-dtype-in-place-and-show-that-pew_tidy_df-now-uses-much-less-memory"><strong>Q: ok, now convert both religion and income columns of <code>pew_tidy_df</code> as categorical dtype (in place) and show that <code>pew_tidy_df</code> now uses much less memory</strong><a class="anchor-link" href="#q-ok-now-convert-both-religion-and-income-columns-of-pew_tidy_df-as-categorical-dtype-in-place-and-show-that-pew_tidy_df-now-uses-much-less-memory">¶</a></h2>
 </div>
 </div>
 </div>
